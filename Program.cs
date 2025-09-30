@@ -2,9 +2,6 @@
 using static System.Convert;
 
 
-#pragma warning disable CS8600
-#pragma warning disable CS8603
-
 
 namespace Physium
 {
@@ -12,7 +9,7 @@ namespace Physium
     {
         public static string Ver()
         {
-            return "v1.0.0-Prerelease_Alpha";
+            return "v1.0.0";
         }
         public static string Type()
         {
@@ -51,7 +48,12 @@ namespace Physium
         }
         static string Input()
         {
-            string str = Console.ReadLine();
+        Input:
+            string str = Console.ReadLine() ?? "";
+            if (str == null)
+            {
+                goto Input;
+            }
             return str;
         }
         static void Main(string[] args)
