@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Physium Formulae")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+228c14621be8450b799379731ac2ca934aeef610")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+dd862f5c28a54db9d54f2b9f20ce729e2f0dc72d")]
 [assembly: System.Reflection.AssemblyProductAttribute("Physium Formulae")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Physium Formulae")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

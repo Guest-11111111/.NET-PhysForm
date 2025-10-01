@@ -9,11 +9,11 @@ namespace Physium
     {
         public static string Ver()
         {
-            return "v1.0.0";
+            return "v1.0.1";
         }
         public static string Type()
         {
-            return "Console Application";
+            return "CLI (Command Prompt) Application";
         }
         public static string Lang()
         {
@@ -21,11 +21,11 @@ namespace Physium
         }
         public static string BaseVer()
         {
-            return "C# .NET SDK v9.0.0";
+            return "C# .NET SDK v9.0.0 by Microsoft®";
         }
         public static string Desc()
         {
-            return "Physics Solver for the Windows x64/ARM 64/AMD64/x86 Machines";
+            return "Physics Solver for Windows Machines";
         }
         public static string Info()
         {
@@ -421,12 +421,12 @@ namespace Physium
                                     Wait();
                                     goto Program;
                                 case "4":
-                                    goto CASE_1;
+                                    goto Main;
                                 default:
                                     goto Density;
                             }
                     default:
-                        goto CASE_1;
+                        goto Density;
                 }
             }
             else if (Menukey == "2")
