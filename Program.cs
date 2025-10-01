@@ -368,6 +368,63 @@ namespace Physium
                             default:
                                 goto Velocity;
                         }
+                        case "5":
+                        Density:
+                            cls();
+                            Text("\n       Physium Formulae: Windows Physics Solver");
+                            Text("\n            Density Menu || Solve for:");
+                            Text("\n                 [1] Density");
+                            Text("\n                 [2] Mass");
+                            Text("\n                 [3] Volume");
+                            Text("\n                 [4] Go Back");
+                            string Densitykey = Input();
+                            cls();
+                            switch (Densitykey)
+                            {
+                                case "1":
+                                    Text("Mass = ? Double");
+                                    string Mass = Input();
+                                    double Ma = ToDouble(Mass);
+                                    cls();
+                                    Text("Volume = ? Double");
+                                    string Volume = Input();
+                                    double Vol = ToDouble(Volume);
+                                    cls();
+                                    double Density = Ma / Vol;
+                                    Text("Density = " + Density.ToString() + " kg/m^3");
+                                    Wait();
+                                    goto Program;
+                                case "2":
+                                    Text("Density = ? Double");
+                                    string Dens = Input();
+                                    double De = ToDouble(Dens);
+                                    cls();
+                                    Text("Volume = ? Double");
+                                    string Vo = Input();
+                                    double V = ToDouble(Vo);
+                                    cls();
+                                    double M = De * V;
+                                    Text("Mass = " + M.ToString() + " kg");
+                                    Wait();
+                                    goto Program;
+                                case "3":
+                                    Text("Density = ? Double");
+                                    string D = Input();
+                                    double Den = ToDouble(D);
+                                    cls();
+                                    Text("Mass = ? Double");
+                                    string Mas = Input();
+                                    double Masss = ToDouble(Mas);
+                                    cls();
+                                    double Volu = Masss / Den;
+                                    Text("Volume = " + Volu.ToString() + " m^3");
+                                    Wait();
+                                    goto Program;
+                                case "4":
+                                    goto CASE_1;
+                                default:
+                                    goto Density;
+                            }
                     default:
                         goto CASE_1;
                 }
